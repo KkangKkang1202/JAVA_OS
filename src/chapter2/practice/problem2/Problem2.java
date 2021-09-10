@@ -21,5 +21,6 @@ public class Problem2
         {
             System.out.println("10의 자리와 1의 자리가 다릅니다.");
         }
+        scanner.close();
     }
 }

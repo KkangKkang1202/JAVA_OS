@@ -2,7 +2,7 @@ package chapter2.practice.problem12_1;
 
 import java.util.Scanner;
 
-public class Problem12
+public class Problem12_1
 {
     public static void main(String [] args)
     {
@@ -49,5 +49,6 @@ public class Problem12
         {
             System.out.println("알 수 없는 연산자. (+, -, *, / 만 입력하세요.)");
         }
+        scanner.close();
     }
 }

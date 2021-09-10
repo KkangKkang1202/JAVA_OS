@@ -43,5 +43,7 @@ public class Problem4
         //중간값 구하기
         int Mid = Sum - Max - Min;
         System.out.println("중간 값은 "+Mid);
+
+        scanner.close();
     }
 }

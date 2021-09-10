@@ -36,5 +36,6 @@ public class Problem6
                 System.out.println(Number);
             }
         }
+        scanner.close();
     }
 }
