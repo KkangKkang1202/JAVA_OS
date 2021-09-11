@@ -23,6 +23,8 @@ public class Problem8
         int X2 = scanner.nextInt();
         int Y2 = scanner.nextInt();
 
+
+        // 직사각형이 충돌하는 모든 경우의 수
         if(inRect(X1, Y1, 100,100,200,200))
         {
             System.out.println("두 직사각형은 충돌한다.");
