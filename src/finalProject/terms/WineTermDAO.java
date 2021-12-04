@@ -1,6 +1,7 @@
 package finalProject.terms;
 
-
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.sql.*;
 import java.util.TreeMap;
 
@@ -8,16 +9,30 @@ import java.util.TreeMap;
 public class WineTermDAO
 {
     private final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private final String DB_URL ="jdbc:mysql://localhost:3306/wine_term?useSSL=false&allowPublicKeyRetrieval=true";
+    private String DB_URL;
 
 
-    private final String UserName = "root";
+    private final String UserName = "project";
     private final String Password = "kami@@1202";
 
+    private String getClientIP()
+    {
+        String ip;
+        try
+        {
+            InetAddress local = InetAddress.getLocalHost();
+            ip=local.getHostAddress();
+        }
+        catch (UnknownHostException ignored)
+        {
+            ip=null;
+        }
+        return ip;
+    }
 
     public WineTermDAO()
     {
-
+        this.DB_URL="jdbc:mysql://"+this.getClientIP()+":3306/wine_term?useSSl=false&allowPublicKeyRetrieval=true";
     }
 
 

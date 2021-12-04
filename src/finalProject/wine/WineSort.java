@@ -215,7 +215,7 @@ public class WineSort extends JFrame
                     jLabel.setFont(new Font("맑은 고딕",Font.PLAIN,15));
                     jLabel.setText(WineSortInformation.RedWine);
                     add(jLabel,BorderLayout.NORTH);
-                    imageIcon = new ImageIcon("C:\\Temp\\Projects\\RedWine.jpg");
+                    imageIcon = new ImageIcon("src//Image//RedWineS.jpg");
                     imageIcon = imageSetSize(imageIcon,230,350);
                     imageLabel.setIcon(imageIcon);
                     add(imageLabel,BorderLayout.WEST);
@@ -232,7 +232,7 @@ public class WineSort extends JFrame
                     jLabel.setFont(new Font("맑은 고딕",Font.PLAIN,15));
                     jLabel.setText(WineSortInformation.WhiteWine);
                     add(jLabel,BorderLayout.NORTH);
-                    imageIcon = new ImageIcon("C:\\Temp\\Projects\\WhiteWine.jpg");
+                    imageIcon = new ImageIcon("src//Image//WhiteWineS.jpg");
                     imageIcon = imageSetSize(imageIcon,230,350);
                     imageLabel.setIcon(imageIcon);
                     add(imageLabel,BorderLayout.WEST);
@@ -248,7 +248,7 @@ public class WineSort extends JFrame
                     jLabel.setFont(new Font("맑은 고딕",Font.PLAIN,15));
                     jLabel.setText(WineSortInformation.RoseWine);
                     add(jLabel,BorderLayout.NORTH);
-                    imageIcon = new ImageIcon("C:\\Temp\\Projects\\RoseWine.jpg");
+                    imageIcon = new ImageIcon("src//Image//RoseWineS.jpg");
                     imageIcon = imageSetSize(imageIcon,230,350);
                     imageLabel.setIcon(imageIcon);
                     add(imageLabel,BorderLayout.WEST);
@@ -313,7 +313,7 @@ public class WineSort extends JFrame
         this.instructionLabel.setFont(new Font("맑은 고딕",Font.PLAIN,14));
 
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Temp\\Projects\\Wine.jpg");
+        ImageIcon imageIcon = new ImageIcon("src//Image//DecoImage.jpg");
         imageIcon = imageSetSize(imageIcon,220,560);
         this.instructionLabelImage = new JLabel();
         this.instructionLabelImage.setIcon(imageIcon);

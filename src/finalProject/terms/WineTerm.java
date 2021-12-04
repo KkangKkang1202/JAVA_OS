@@ -71,7 +71,7 @@ public class WineTerm extends JFrame
         {
             JLabel imageLabel = new JLabel();
             imageLabel.setPreferredSize(new Dimension(100,200));
-            File SourceImage = new File("C:\\Temp\\Projects\\TermWine.jpg");
+            File SourceImage = new File("src//Image//TermWine.jpg");
             image = ImageIO.read(SourceImage);
             Image image1 = image.getScaledInstance(720,200,Image.SCALE_SMOOTH);
 

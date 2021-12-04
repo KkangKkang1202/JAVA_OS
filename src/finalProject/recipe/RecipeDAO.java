@@ -1,20 +1,39 @@
 package finalProject.recipe;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.sql.*;
 import java.util.Vector;
+
 
 public class RecipeDAO
 {
     private final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private final String DB_URL = "jdbc:mysql://localhost:3306/recipe?useSSl=false&allowPublicKeyRetrieval=true";
+    private String DB_URL;
 
-    private final String UserName = "root";
+    private final String UserName = "project";
     private final String Password = "kami@@1202";
+
+    private String getClientIP()
+    {
+        String ip;
+        try
+        {
+            InetAddress local = InetAddress.getLocalHost();
+            ip=local.getHostAddress();
+        }
+        catch (UnknownHostException ignored)
+        {
+            ip=null;
+        }
+        return ip;
+    }
 
     public RecipeDAO()
     {
-
+        this.DB_URL="jdbc:mysql://"+this.getClientIP()+":3306/recipe?useSSl=false&allowPublicKeyRetrieval=true";
     }
+
 
     public void getDataRed(Vector<String> redWineVector)
     {

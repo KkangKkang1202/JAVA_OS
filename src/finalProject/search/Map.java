@@ -98,7 +98,7 @@ public class Map extends JFrame
         Image image = null;
         try
         {
-            File SourceImage = new File("C:\\Temp\\Projects\\SearchWine.jpg");
+            File SourceImage = new File("src//Image//SearchWine.jpg");
             image = ImageIO.read(SourceImage);
             image.getScaledInstance(300,300,Image.SCALE_SMOOTH);
             JLabel imgLabel = new JLabel(new ImageIcon(image));

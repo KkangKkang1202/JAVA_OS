@@ -1,20 +1,38 @@
 package finalProject.wine;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.sql.*;
 import java.util.TreeMap;
 
 public class WineSortDAO
 {
     private final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private final String DB_URL = "jdbc:mysql://localhost/red_wine?&useSSL=false&allowPublicKeyRetrieval=true";
+    private String DB_URL;
 
-    private final String USER_NAME = "root";
+    private final String USER_NAME = "project";
     private final String PASSWORD = "kami@@1202";
+
+    private String getClientIP()
+    {
+        String ip;
+        try
+        {
+            InetAddress local = InetAddress.getLocalHost();
+            ip=local.getHostAddress();
+        }
+        catch (UnknownHostException ignored)
+        {
+            ip=null;
+        }
+        return ip;
+    }
 
     public WineSortDAO()
     {
-
+        this.DB_URL="jdbc:mysql://"+this.getClientIP()+":3306/red_wine_sort?useSSl=false&allowPublicKeyRetrieval=true";
     }
+
     public void getDataRed(TreeMap<String,String> hashMap)
     {
         Connection connection = null;

@@ -120,7 +120,7 @@ public class Recipe extends JFrame
         this.InstructionLabel.setBackground(new Color(236,230,204));
 
 
-        imageIcon = new ImageIcon("C:\\Temp\\RedWhiteRose.jpg");
+        imageIcon = new ImageIcon("src//Image//RedWhiteRose.jpg");
         imageIcon = imageSetSize(imageIcon,720,250);
         imageLabel.setIcon(imageIcon);
         imageLabel.setBounds(0,270,720,250);
@@ -191,7 +191,7 @@ public class Recipe extends JFrame
                 DecorationLabel2.setFont(new Font("맑은 고딕",Font.BOLD,19));
                 DecorationLabel2.setForeground(new Color(235,235,235));
 
-                imageIcon = new ImageIcon("C:\\Temp\\RedWine.jpg");
+                imageIcon = new ImageIcon("src//Image//RedWine.jpg");
                 imageIcon = imageSetSize(imageIcon,720,250);
                 imageLabel.setIcon(imageIcon);
                 imageLabel.setBounds(0,270,720,250);
@@ -242,7 +242,7 @@ public class Recipe extends JFrame
                 DecorationLabel2.setFont(new Font("맑은 고딕",Font.BOLD,19));
                 DecorationLabel2.setForeground(new Color(235,235,235));
 
-                imageIcon = new ImageIcon("C:\\Temp\\WhiteWine.jpg");
+                imageIcon = new ImageIcon("src//Image//WhiteWine.jpg");
                 imageIcon = imageSetSize(imageIcon,720,250);
                 imageLabel.setIcon(imageIcon);
                 imageLabel.setBounds(0,270,720,250);
@@ -293,7 +293,7 @@ public class Recipe extends JFrame
                 DecorationLabel2.setFont(new Font("맑은 고딕",Font.BOLD,19));
                 DecorationLabel2.setForeground(new Color(235,235,235));
 
-                imageIcon = new ImageIcon("C:\\Temp\\RoseWine.jpg");
+                imageIcon = new ImageIcon("src//Image//RoseWine.jpg");
                 imageIcon = imageSetSize(imageIcon,720,250);
                 imageLabel.setIcon(imageIcon);
                 imageLabel.setBounds(0,270,720,250);
